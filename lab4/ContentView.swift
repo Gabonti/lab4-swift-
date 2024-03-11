@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Toggle("Dark Mode", isOn: $isDarkMode)
+                Toggle(isDarkMode ? "Dark Mode" : "Light Mode", isOn: $isDarkMode)
                     .padding()
                 
                 Spacer()
